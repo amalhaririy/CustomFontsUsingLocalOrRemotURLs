@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  CustomFonts
 //
-//  Created by Trum Gyorgy on 12/1/15.
-//  Copyright (c) 2015 General Electric. All rights reserved.
+// Created by Abdulrahman on 10/7/19.
 //
 
 import UIKit
