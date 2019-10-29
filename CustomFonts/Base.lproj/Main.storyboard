@@ -20,23 +20,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfS-Tr-JD7">
-                                <rect key="frame" x="163" y="118" width="88.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="125.5" y="118" width="163.5" height="39.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="font url" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FE7-r0-GlH">
-                                <rect key="frame" x="32" y="188.5" width="350" height="34"/>
+                                <rect key="frame" x="32" y="207.5" width="350" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ku-O3-DQY">
-                                <rect key="frame" x="129.5" y="237.5" width="155" height="30"/>
+                                <rect key="frame" x="129.5" y="256.5" width="155" height="30"/>
                                 <state key="normal" title="Download and set font">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="pushNewFontButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="40I-ac-SU3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJg-72-ja4">
+                                <rect key="frame" x="160" y="301.5" width="94" height="30"/>
+                                <state key="normal" title="Use local font">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="localFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Rt-pR-lXw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,6 +54,8 @@
                             <constraint firstItem="AfS-Tr-JD7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="74" id="2ys-aP-SJi"/>
                             <constraint firstItem="FE7-r0-GlH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="BhN-we-851"/>
                             <constraint firstItem="8ku-O3-DQY" firstAttribute="top" secondItem="FE7-r0-GlH" secondAttribute="bottom" constant="15" id="DDd-Ik-Aj4"/>
+                            <constraint firstItem="cJg-72-ja4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GvT-aw-Eoh"/>
+                            <constraint firstItem="cJg-72-ja4" firstAttribute="top" secondItem="8ku-O3-DQY" secondAttribute="bottom" constant="15" id="LlC-MC-zDv"/>
                             <constraint firstItem="FE7-r0-GlH" firstAttribute="top" secondItem="AfS-Tr-JD7" secondAttribute="bottom" constant="50" id="Vfg-iq-a8j"/>
                             <constraint firstItem="8ku-O3-DQY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WV6-wT-j8O"/>
                             <constraint firstItem="AfS-Tr-JD7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cx2-Gy-ah6"/>

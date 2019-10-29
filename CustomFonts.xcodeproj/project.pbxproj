@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		134A028273A23E03769EDF49 /* Pods_CustomFontsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884B9F3B5050F2D3DFDEC976 /* Pods_CustomFontsTests.framework */; };
+		373A87392368572300EFA307 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A87382368572300EFA307 /* UIViewExtension.swift */; };
 		981B792D1C0DC18600815AC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981B792C1C0DC18600815AC3 /* AppDelegate.swift */; };
 		981B792F1C0DC18600815AC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981B792E1C0DC18600815AC3 /* ViewController.swift */; };
 		981B79321C0DC18600815AC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 981B79301C0DC18600815AC3 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		1BA92B39356D32FB88893222 /* Pods-CustomFontsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomFontsTests.release.xcconfig"; path = "Target Support Files/Pods-CustomFontsTests/Pods-CustomFontsTests.release.xcconfig"; sourceTree = "<group>"; };
 		25DD29A84E22D26AE455B1CF /* Pods_CustomFonts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomFonts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		373A87382368572300EFA307 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		884B9F3B5050F2D3DFDEC976 /* Pods_CustomFontsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomFontsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D28935AE401B7F8F2B7D586 /* Pods-CustomFonts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomFonts.debug.xcconfig"; path = "Target Support Files/Pods-CustomFonts/Pods-CustomFonts.debug.xcconfig"; sourceTree = "<group>"; };
 		981B79271C0DC18600815AC3 /* CustomFonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomFonts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,7 @@
 				981B79331C0DC18600815AC3 /* Images.xcassets */,
 				981B79351C0DC18600815AC3 /* LaunchScreen.xib */,
 				981B792A1C0DC18600815AC3 /* Supporting Files */,
+				373A87382368572300EFA307 /* UIViewExtension.swift */,
 			);
 			path = CustomFonts;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			files = (
 				981B792F1C0DC18600815AC3 /* ViewController.swift in Sources */,
 				981B792D1C0DC18600815AC3 /* AppDelegate.swift in Sources */,
+				373A87392368572300EFA307 /* UIViewExtension.swift in Sources */,
 				981B79501C0DD1BD00815AC3 /* Downloader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

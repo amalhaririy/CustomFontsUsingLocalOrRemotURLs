@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  CustomFonts
 //
-//  Created by Abdulrahman on 10/7/19.
+//  Created by Abdulrahman Qasem on 10/29/19.
 //
 
 import UIKit
@@ -20,15 +20,27 @@ class ViewController: UIViewController {
     
     
     @IBAction func pushNewFontButton(sender: AnyObject) {
-        var url = "http://webpagepublicity.com/free-fonts/x/Xephyr%20Condensed.ttf"
-        if !(urlTexField.text?.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ?? true ) {
-            url = urlTexField.text!
+        if let path = urlTexField.text ,!(path.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ) {
+            if let URL = URL(string: path) {
+                Downloader.load(URL: URL, successWithName: { (fontName) in
+                    self.customFontLabel.font = UIFont(name: fontName, size: 40)
+                }) { error in
+                    print(error.localizedDescription)
+                }
+            }
+        }else{
+            urlTexField.shake()
         }
-        if let URL = URL(string: url) {
+        
+    }
+    
+    @IBAction func localFont(_ sender: Any) {
+        guard let path = Bundle.main.path(forResource: "horrendo", ofType: "ttf") else { return }
+        if let URL = URL(string: path) {
             Downloader.load(URL: URL, successWithName: { (fontName) in
-                self.customFontLabel.font = UIFont(name: fontName, size: 20.0)
-            }) {
-                print("Faliure")
+                self.customFontLabel.font = UIFont(name: fontName, size: 40)
+            }) { error in
+                print(error.localizedDescription)
             }
         }
     }
